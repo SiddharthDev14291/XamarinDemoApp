@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoApp.MainPage">
+
+    <StackLayout VerticalOptions="Center">
+        <Image x:Name="iconImage"
+               Aspect="AspectFit"
+               HorizontalOptions="FillAndExpand"
+               Margin="0,0,0,50"></Image>
+        <Entry x:Name="username"
+               Keyboard="Email"
+               Placeholder="Username"
+               TextColor="Black"
+               Margin="15,0,15,0"/>
+        <Entry x:Name="password"
+               IsPassword="True"
+               Placeholder="Password"
+               TextColor="Black"
+               Margin="15,0,15,0"/>
+        <Button x:Name="loginClicked"
+                Text="Login"
+                FontAttributes="Bold"
+                TextColor="White"
+                Margin="15,0,15,0"
+                BackgroundColor="#3f84e5"
+                Clicked="loginClicked_Clicked"/>
+    </StackLayout>
+</ContentPage>

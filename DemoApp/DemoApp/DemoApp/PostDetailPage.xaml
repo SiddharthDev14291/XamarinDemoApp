@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DemoApp.PostDetailPage">
+    <NavigationPage.TitleView>
+        <Label Text="Edit Post"
+               HorizontalTextAlignment="Start"
+               TextColor="White"
+                FontAttributes="Bold"/>
+    </NavigationPage.TitleView>
+    <StackLayout>
+        <Entry x:Name="experienceEntry"
+               Margin="15,15,15,15"
+               HeightRequest="50"></Entry>
+        <Button Text="Update"
+                x:Name="updateButton"
+                Clicked="updateButton_Clicked"
+                FontAttributes="Bold"
+                TextColor="White"
+                Margin="150,0,150,0"
+                BackgroundColor="#3f84e5"></Button>
+        <Button Text="Delete"
+                x:Name="deleteButton"
+                Clicked="deleteButton_Clicked"
+                FontAttributes="Bold"
+                TextColor="White"
+                Margin="150,10,150,0"
+                BackgroundColor="#3f84e5"></Button>
+    </StackLayout>
+</ContentPage>
+
